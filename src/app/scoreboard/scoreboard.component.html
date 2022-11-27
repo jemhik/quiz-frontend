@@ -1,0 +1,49 @@
+<html>
+<body>
+<div class="row mt-5">
+  <div class="container">
+    <h3 class="text-center mt-5">Scoreboard</h3>
+    <hr>
+    <br>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="bg-image h-100">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card shadow-2-strong">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-borderless mb-0">
+                    <thead>
+                    <tr>
+                      <th scope="col">Ім'я</th>
+                      <th scope="col">Прізвище</th>
+                      <th scope="col">Академічна група</th>
+                      <th scope="col">Оцінка</th>
+                    </tr>
+                    </thead>
+                    <tbody *ngFor="let user of users">
+                    <tr>
+                      <td>{{user.firstName}}</td>
+                      <td>{{user.lastName}}</td>
+                      <td>{{user.academicGroup}}</td>
+                      <td>{{user.score}}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
